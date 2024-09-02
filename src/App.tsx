@@ -18,6 +18,7 @@ export default function App() {
         border: "16px solid",
         borderColor: theme.palette.common.white,
         boxSizing: "border-box",
+        overflow: "auto",
       }}
     >
       <Monogram />
@@ -74,7 +75,7 @@ export default function App() {
       </Box>
       <Box
         sx={{
-          padding: "16px",
+          paddingLeft: "16px",
           [theme.breakpoints.up("sm")]: {
             alignSelf: "flex-end",
           },
