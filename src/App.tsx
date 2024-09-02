@@ -7,21 +7,17 @@ export default function App() {
   return (
     <Box
       sx={{
-        [theme.breakpoints.up("md")]: {
-          width: "calc(100vw - 64px)",
-          height: "calc(100vh - 64px)",
-          m: "32px",
-          padding: "64px",
-        },
-        width: "calc(100vw - 32px)",
-        height: "calc(100vh - 32px)",
-        m: "16px",
+        [theme.breakpoints.up("md")]: {},
+        width: "100vw",
+        height: "100vh",
         padding: "32px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        alignItems: "flex-start",
         backgroundColor: "#F9EEE0",
+        border: "16px solid",
+        borderColor: theme.palette.common.white,
+        boxSizing: "border-box",
       }}
     >
       <Monogram />

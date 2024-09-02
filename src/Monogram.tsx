@@ -18,7 +18,7 @@ export default function Monogram() {
   return (
     <WebadelicLogo
       sx={{
-        marginLeft: "16px",
+        margin: "0 0 32px 16px",
         [theme.breakpoints.up("sm")]: {
           alignSelf: "flex-end",
         },
