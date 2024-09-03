@@ -9,9 +9,11 @@ const theme = createTheme({
       lineHeight: "4rem",
       fontWeight: 600,
       color: "#2A06FF",
+      letterSpacing: "-1px",
     },
     h3: {
       fontSize: "1.25rem",
+      lineHeight: "2rem",
       fontWeight: 500,
     },
     h6: {

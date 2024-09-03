@@ -7,9 +7,8 @@ export default function App() {
   return (
     <Box
       sx={{
-        [theme.breakpoints.up("md")]: {},
         width: "100vw",
-        height: "100vh",
+        minHeight: "100vh",
         padding: "32px",
         display: "flex",
         flexDirection: "column",
@@ -18,7 +17,9 @@ export default function App() {
         border: "16px solid",
         borderColor: theme.palette.common.white,
         boxSizing: "border-box",
-        overflow: "auto",
+        [theme.breakpoints.up("md")]: {
+          padding: "64px",
+        },
       }}
     >
       <Monogram />
@@ -35,8 +36,6 @@ export default function App() {
             display: "flex",
             justifyContent: "center",
             flexDirection: "column",
-            alignItems: "flex-start",
-            padding: "16px",
           }}
         >
           <Typography variant="h1" component="h1">
@@ -54,9 +53,7 @@ export default function App() {
               borderBottomLeftRadius: "16px",
             }}
           />
-          <Typography variant="h3" mb={6}>
-            About
-          </Typography>
+
           <Box
             sx={{
               [theme.breakpoints.up("md")]: {
@@ -64,7 +61,7 @@ export default function App() {
               },
             }}
           >
-            <Typography mb={6}>
+            <Typography variant="h3" mb={6}>
               Hello, I'm a softy from England. Outside my full-time gig, I
               occasionally dabble in side projects, some of which have found new
               homes via acquisition—though not quite enough to trade my umbrella
@@ -75,7 +72,6 @@ export default function App() {
       </Box>
       <Box
         sx={{
-          paddingLeft: "16px",
           [theme.breakpoints.up("sm")]: {
             alignSelf: "flex-end",
           },

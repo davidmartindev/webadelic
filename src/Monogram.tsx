@@ -18,11 +18,11 @@ export default function Monogram() {
   return (
     <WebadelicLogo
       sx={{
-        margin: "0 0 32px 16px",
+        margin: "0 0 32px 0",
         [theme.breakpoints.up("sm")]: {
           alignSelf: "flex-end",
         },
-        color: theme.palette.primary.main,
+        color: theme.palette.common.black,
       }}
     />
   );
